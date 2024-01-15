@@ -2,7 +2,11 @@
 
 Peptides are made identifiable in LC-MS/MS due to their predictable characteristics (e.g. retention time, ion-mobility, MS1 precursor m/z, and MS2 fragment m/z's). While these characteristics are largely predictable with high accuracy for label-free peptides due to overwhelming experimental and analytical work spanning decades, there is need for a stream-lined workflow to predict these characteristics for labeled peptides (e.g. mTRAQ or TMT) to improve identifications. 
 
-Here, experical ion-mobility (IM) and MS2-spectral data from mTRAQ-labeled peptides were used to build a deep learning model to predict these characteristics, with the goal of increasing the number of identifications, and thus proteomic coverage.
+Here, emperical ion-mobility (IM) and MS2-spectral data from mTRAQ-labeled peptides were used to build deep learning models to predict these characteristics; the goal was to increase the number of identifications, and thus proteomic coverage.
 
-1. 
+Results:
+
+**Ion-mobility predictions**: ~2% increase in precursor identifications and ~5% increase in protein identifications.
+
+**MS2-fragment-spectra**: ~5% fewer precursor & protein identifications than DIA-NN's base-line predictions, which has already been optimized for mTRAQ by other means during work related to plexDIA (https://www.nature.com/articles/s41587-022-01389-w). Note: this current implementation works well, albeit not as well as DIA-NN's mTRAQ fragment spectra prediction. However, the benefit of this work-flow is that it will extend easily to other novel labels (not just mTRAQ), whereas DIA-NN cannot.
 
